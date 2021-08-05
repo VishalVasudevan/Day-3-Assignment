@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>DAY 3- Assignment </title>
+</head>
+<body>
+    <!-- Assignment day 3
+
+    1.Create Two input fields for name and city and take their values and print it together on the page when the user clicks on add button.
+     -->
+    <input type="text" placeholder="Enter Name" id="inp"></input>
+    <input type="text" placeholder="Enter City" id="place"></input>
+
+    <button onclick="hello()">click</button>
+    <div id="box"></div>
+    <style>
+        #box{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        *{
+            margin: 0;
+            padding:9px;
+            
+        }
+        
+    </style>
+       
+    <script>
+        function hello(){
+                let name=document.querySelector("#inp").value;
+                let place=document.querySelector("#place").value;
+                document.querySelector("#box").innerHTML=`${name} from ${place}`;
+            }
+    </script>
+</body>
+</html>
